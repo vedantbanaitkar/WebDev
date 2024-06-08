@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            background-color: mistyrose;
+            display: flex;
+        }
+        .box{
+            width: 80vw;
+            height: 30vh;
+            border: 2px solid black;
+            background-color: maroon;
+            padding: 20px;
+            margin: 30px;
+        }
+        @media screen and (max-width: 390px){
+            body{
+                /* display: flex; */
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4 - Navbar</title>
+    <style>
+        :root{
+            --primcolor: #332150;
+            --seccolor: #344C64;
+            --textcolor: #57A6A1;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            display: flex;
+            background-color: #1f2d3a;
+        } 
+        body nav{
+            background-color: var(--primcolor);
+            width: 100vw;
+            position: sticky;
+        }
+        .ele{
+            display: inline-block;
+            color: var(--textcolor);
+            padding: 10px;
+            /* margin: 10px; */
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .ele:hover{
+            background-color: var(--seccolor);
+            color: whitesmoke;
+        }
+        @media screen and (max-width: 390px) {
+            body{
+                flex-direction: column;
+            }
+            .ele{
+                display: block;
+                text-align: center;
+                margin: 30px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="ele">Home</div>
+        <div class="ele">About</div>
+        <div class="ele">Contact</div>
+    </nav>
+</body>
+</html>
