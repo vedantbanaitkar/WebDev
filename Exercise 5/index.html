@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 6</title>
+    <style>
+      :root {
+        --maincolor: #254336;
+        --bgcolor: #6b8a7a;
+        --color1: #b7b597;
+        --color2: #dad3be;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+      }
+      body {
+        background-color: var(--bgcolor);
+        text-align: center;
+        position: relative;
+      }
+      nav {
+        background-color: var(--maincolor);
+        width: 100%;
+        position: sticky;
+        top: 0;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        padding-left: 30px;
+      }
+      nav ul li {
+        padding: 10px 20px;
+        border-radius: 8px;
+        margin: 10px 0px;
+      }
+      nav ul li a {
+        color: var(--color2);
+        text-decoration: none;
+        cursor: pointer;
+      }
+      nav ul li:hover {
+        background-color: var(--bgcolor);
+      }
+      .box {
+        width: 40vw;
+        height: 90vh;
+        border: 2px solid black;
+        display: inline-block;
+        margin: 8vh 2vw;
+        border-radius: 9px;
+      }
+      .box3 {
+        width: 85vw;
+        height: 10vh;
+        border: 2px solid black;
+        margin: 0 auto 8vh auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color1);
+      }
+      footer{
+        background-color: var(--maincolor);
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      /* footer p{
+        display: block;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Contact us</a></li>
+        </ul>
+      </nav>
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box3">
+        Hello, This is Exercise 5 in Sigma Web Development Course
+      </div>
+      <footer>
+        <div>ALL Rights Reserved</div>
+        <div style="font-size: 10px;">Since 1983</div>
+      </footer>
+    </div>
+  </body>
+</html>
