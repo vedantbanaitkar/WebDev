@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 7</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        /* font-family: "Segou Ui", Arial, "Helvetica Neue", Helvetica, sans-serif; */
+        font-family: "baloo 2";
+        
+      }
+      /* body{
+        background-color: rgb(245, 245, 245);
+      } */
+      a {
+        text-decoration: none;
+        color: gray;
+      }
+      .outer {
+        display: flex;
+        padding: 10px;
+        width: 100vw;
+        align-items: center;
+        border: 2px solid gray;
+        border-radius: 8px;
+        margin-bottom: 100px;
+        position: sticky;
+        top: 0;
+      }
+
+      .logo-container img{
+        height: 70px;
+        align-items: center;
+        margin-left: 70px;
+        cursor: pointer;
+        
+      }
+      .menu {
+        margin-left: auto; 
+      }
+      .menu-items {
+        display: flex;
+        list-style: none;
+        column-gap: 15px;
+        width: auto;
+        clear: right;
+        font-weight: 400;
+        font-size: 16px;
+        margin-right: 80px;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      .menu-items li {
+        padding: 10px;
+        
+      }
+      .menu-items li a{
+display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .menu-items li:hover {
+        cursor: pointer;
+        border: 0.5px solid rgb(181, 181, 181);
+        box-shadow: 0 0 15px rgba(176, 177, 176, 0.5);
+        border-radius: 8px;
+      }
+      .section{
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw;
+        column-gap: 35px;
+        row-gap: 25px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        border: 1px solid rgb(205, 205, 205);
+        display: inline-block;
+        width: 20vw;
+        height: 25vh;
+        background-color: rgba(230, 230, 230, 0.537);
+        border-radius: 8px;
+      }
+      .card h3 {
+        text-align: center;
+        margin: 25px auto 5px auto;
+        font-weight: 700;
+      }
+      .card p {
+        text-align: center;
+        font-size: 14px;
+        margin: 0px auto 15px auto;
+        font-weight: 100;
+      }
+      .card a{
+        color: aliceblue;
+        text-decoration: none;
+        background-color: transparent;
+      }
+      .downloads {
+        display: flex;
+        color: aliceblue;
+        font-size: 14px;
+        gap: 20px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 25px;
+      }
+      ._32bit {
+        padding: 5px;
+        background-color: rgb(125, 217, 217);
+        border-radius: 9px;
+        cursor: pointer;
+        
+      }
+      ._32bit:hover{
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+      }
+      ._64bit {
+        padding: 5px;
+        background-color: rgb(185, 240, 102);
+        border-radius: 9px;
+        cursor: pointer;
+      }
+      ._64bit:hover{
+        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="logo-container">
+        <a href="/"><img src="logo.png" alt="" /></a>
+      </div>
+      <div class="menu">
+        <ul class="menu-items">
+          <li><a href="/"><span>Products</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></a></li>
+          <li><a href="/"><span>Pricing</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></a></li>
+          <li><a href="/"><span>Resources</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></a></li>
+          <li><a href="/"><span>About us</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></a></li>
+          <li><a href="/"><span>Security and Compliance</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" color="#000000" fill="none">
+    <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg></a></li>
+          <li>
+            <a href=""><i class="fa-solid fa-language"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="section">
+      <div class="card card-1">
+        <h3>Language</h3>
+        <p>Lorem</p>
+        <div class="downloads">
+          <div class="version _32bit"><a href="ue_english_64.exe"> Download 32-bit</a></div>
+          <div class="version _64bit"><a href="ue_english_64.exe"> Download 64-bit</a></div>
+        </div>
+      </div>
+      <div class="card card-2">
+        <h3>Language</h3>
+        <p>Lorem</p>
+        <div class="downloads">
+          <div class="version _32bit"><a href="ue_english_64.exe"> Download 32-bit</a></div>
+          <div class="version _64bit"><a href="ue_english_64.exe"> Download 64-bit</a></div>
+        </div>
+      </div>
+      <div class="card card-3">
+        <h3>Language</h3>
+        <p>Lorem</p>
+        <div class="downloads">
+          <div class="version _32bit"><a href="ue_english_64.exe"> Download 32-bit</a></div>
+          <div class="version _64bit"><a href="ue_english_64.exe"> Download 64-bit</a></div>
+        </div>
+      </div>
+      <div class="card card-4">
+        <h3>Language</h3>
+        <p>Lorem</p>
+        <div class="downloads">
+          <div class="version _32bit"><a href="ue_english_64.exe"> Download 32-bit</a></div>
+          <div class="version _64bit"><a href="ue_english_64.exe"> Download 64-bit</a></div>
+        </div>
+      </div>
+      <div class="card card-5">
+        <h3>Language</h3>
+        <p>Lorem</p>
+        <div class="downloads">
+          <div class="version _32bit"><a href="ue_english_64.exe"> Download 32-bit</a></div>
+          <div class="version _64bit"><a href="ue_english_64.exe"> Download 64-bit</a></div>
+        </div>
+      </div>
+      <div class="card card-6">
+        <h3>Language</h3>
+        <p>Lorem</p>
+        <div class="downloads">
+          <div class="version _32bit"><a href="ue_english_64.exe"> Download 32-bit</a></div>
+          <div class="version _64bit"><a href="ue_english_64.exe"> Download 64-bit</a></div>
+        </div>
+      </div>
+      <div class="card card-7">
+        <h3>Language</h3>
+        <p>Lorem</p>
+        <div class="downloads">
+          <div class="version _32bit"><a href="ue_english_64.exe"> Download 32-bit</a></div>
+          <div class="version _64bit"><a href="ue_english_64.exe"> Download 64-bit</a></div>
+        </div>
+      </div>
+      <div class="card card-8">
+        <h3>Language</h3>
+        <p>Lorem</p>
+        <div class="downloads">
+          <div class="version _32bit"><a href="ue_english_64.exe"> Download 32-bit</a></div>
+          <div class="version _64bit"><a href="ue_english_64.exe"> Download 64-bit</a></div>
+        </div>
+      </div>
+      <div class="card card-9">
+        <h3>Language</h3>
+        <p>Lorem</p>
+        <div class="downloads">
+          <div class="version _32bit"><a href="ue_english_64.exe"> Download 32-bit</a></div>
+          <div class="version _64bit"><a href="ue_english_64.exe"> Download 64-bit</a></div>
+        </div>
+      </div>
+      <div class="card card-10">
+        <h3>Language</h3>
+        <p>Lorem</p>
+        <div class="downloads">
+          <div class="version _32bit"><a href="ue_english_64.exe"> Download 32-bit</a></div>
+          <div class="version _64bit"><a href="ue_english_64.exe"> Download 64-bit</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
