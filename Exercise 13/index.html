@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 13</title>
+    <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid rgb(66, 65, 65);
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        border: 1px solid gray;
+    }
+    .card{
+        padding: 10px 20px;
+        width: 100%;
+        /* background-color: red; */
+        height: 100px;
+        display: flex;
+    }
+
+    .card img{
+        /* display: inline-block; */
+        /* width: 20%;
+        height: 100%; */
+        border-radius: 10px;
+    }
+    .image{
+        /* width: 15%; */
+    }
+
+    .duration{
+        background-color:rgba(42, 40, 40, 0.639);
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+        top: -10px;
+        right: 50px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        padding: 2px 5px;
+        border-radius: 7px;
+        font-size: 14px;
+    }
+
+    .title{
+        font-size: 24px;
+        font-weight: 600;
+        margin: 5px auto 10px auto;
+    }
+
+    .dot{
+        border: 1px solid gray;
+        border-radius: 150px;
+    }
+
+    .info span{
+        margin: 10px ;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB0alxLSXCSEPITzWr-XXUiv1oglQ" alt="">
+                <div class="duration">40:90</div>
+            </div>
+            <div class="info">
+                <div class="title">Title here lorem10</div>
+                <span>Channel Name</span>
+                <span class="dot"></span>
+                <span> 727k views</span>
+                <span class="dot"></span>
+                <span>upload time</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
