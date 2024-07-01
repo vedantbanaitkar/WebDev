@@ -1,0 +1,1 @@
+Hi, this is the string to writeHi, this is the string to write
