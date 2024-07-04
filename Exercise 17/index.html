@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto";
+        color: white;
+      }
+      .outer {
+        /* background-color: #121212; */
+        background-color: rgb(15,15,15);
+        width: 60vw;
+        height: 25vh;
+        overflow: hidden;
+        padding: 10px 10px;
+        border-radius: 15px;
+        border: 1px solid white;
+        cursor: pointer;
+      }
+      .outer:hover{
+        background-color: rgba(15, 15, 15, 0.894);
+      }
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 25%;
+        position: relative;
+        margin-left: 5px;
+      }
+      img {
+        height: 90%;
+        object-fit: contain;
+        border-radius: 5px;
+      }
+      .time{
+        position: absolute;
+        bottom: 18px;
+        right: 5px;
+        background-color: rgba(128, 128, 128, 0.75); /* grey with 75% opacity */
+        color: white;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-size: 0.75rem;
+      }
+      .info-container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+      }
+      .title {
+        margin-bottom: 15px;
+        margin-top: 20px;
+      }
+      .info ul {
+        /* list-style-type: disc; */
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+      }
+      .info li {
+        list-style: none;
+        display: list-item;
+        /* list-style-position: inside; */
+        margin-right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer flex flex-row gap-x-7">
+      <div class="image-container">
+        <img
+          src="https://i.ytimg.com/vi/ojuUnfqnUI0/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBae_hpJ5yvbFUKUHSMDm6WaLT6kg"
+          alt=""
+        />
+        <div class="time">19:10</div>
+      </div>
+      <div class="info-container">
+        <div class="title text-2xl font-bold">Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1</div>
+        <div class="info">
+          <ul class="flex flex-row text-sm">
+            <li class="channel">CodeWithHarry</li>
+            <li class="views">2M views</li>
+            <li class="days">9 months ago</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
