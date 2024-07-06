@@ -1,0 +1,22 @@
+/* body{
+    background-color: red;
+} */
+
+nav, ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    gap: 34px;
+    padding: 23px;
+}
+
+nav{
+    background-color: beige;
+    color: black;
+    padding: 23px;
+}
