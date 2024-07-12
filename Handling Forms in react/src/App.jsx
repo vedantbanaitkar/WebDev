@@ -8,7 +8,7 @@ function App() {
   const {
     register,
     handleSubmit,
-    watch,
+    setError,
     formState: { errors, isSubmitting },
   } = useForm();
 
@@ -23,6 +23,12 @@ function App() {
   const onSubmit = async (data) => {
     await delay(4);
     console.log(data);
+    if(data.username!=="shub"){
+      setError("myform", {message:"Invalid Credentials"})
+    }
+    if(data.username==="roha"){
+      setError("blocked", { message: "Blocked Account " });
+    }
   };
 
   return (
@@ -61,6 +67,8 @@ function App() {
 
         <input disabled={isSubmitting} type="submit" value="Submit" />
         {isSubmitting && <div className="loading">Loading...</div>}
+        {errors.myform && <div>{errors.myform.message}</div>}
+        {errors.blocked && <div>{errors.blocked.message}</div>}
       </form>
     </div>
   );
